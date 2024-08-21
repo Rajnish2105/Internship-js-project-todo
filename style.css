@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+    color: white;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 60%;
+    min-height: 500px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 20px 20px 20px;
+}
+
+h1,
+form,
+.todo-list-container,
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+input,
+button {
+    border: none;
+    outline: 0;
+    font-size: 1.5rem;
+}
+
+.input-box,
+.add-button {
+    padding: 0.5rem;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0;
+}
+
+.add {
+    width: 27.5px;
+    height: 27.3px;
+}
+
+.todo-item {
+    list-style: none;
+    flex-grow: 1;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.delete-btn,
+.complete-btn {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.check,
+.trash {
+    color: white;
+    width: 20px;
+    pointer-events: none;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border-left: 1px solid black;
+}
+
+.complete-btn {
+    border-left: 1px solid black;
+    background-color: transparent;
+}
+
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.input-box {
+    background-color: transparent;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0;
+    width: 500px;
+}
+
+.todo-container {
+    background-color: lightblue;
+    margin: 10px auto;
+    min-height: fit-content;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+.todo-container {
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.check {
+    color: green;
+}
+
+.trash {
+    color: red;
+}
+
+.check,
+.trash {
+    width: 20px;
+    height: 20px;
+}
+
+h2 {
+    margin-left: 15%;
+    font-weight: 900;
+    font-size: 40px;
+    background: linear-gradient(to right, #456, #888, darkblue);
+    width: fit-content;
+    background-clip: text;
+    color: transparent;
+}
+
+.todo-item::first-letter {
+    text-transform: uppercase;
+}
